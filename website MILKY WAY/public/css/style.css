@@ -1,0 +1,558 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------Navbar-------------------- */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+}
+
+/* ---------------------Tombol-------------------- */
+.btn-custom {
+    background-color: #a2d5f2;
+}
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* ---------------------Jumbotron-------------------- */
+.jumbotron {
+    background-image: url("/gambar/milk0.jpg");
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 100px;
+    font-weight: 350;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 600;
+    color: #a2d5f2;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 85%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------------------Info Panel-------------------- */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 12px;
+    margin-top: -100px;
+    padding: 25px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+}
+
+/* ---------------------Picture Under Navbar-------------------- */
+.picture {
+    background: url("/gambar/milk1.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0px;
+    position: relative;
+    height: 250px;
+}
+
+.picture::after {
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.picture .container {
+    position: relative;
+    z-index: 1;
+}
+
+.picture .display-4 {
+    color: #ffffff;
+    margin-top: auto;
+    font-weight: 250;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    float: right;
+    font-size: 45px;
+}
+
+.picture .display-4 span {
+    font-weight: 600;
+    color: #a2d5f2;
+}
+
+/* ---------------------Button Up-------------------- */
+.btnup {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #f6f4e6;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+/* ---------------------Home Product-------------------- */
+.home-product {
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.home-product h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.home-product h3 span {
+    font-weight: 500;
+}
+
+.home-product p {
+    font-size: 18px;
+    color: #acacac;
+    margin-top: 25px;
+}
+
+/* ---------------------Product-------------------- */
+.product {
+    margin-top: 40px;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 80%;
+}
+
+.small-container {
+    margin-left: 10px;
+}
+
+.product p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.product .desc {
+    font-weight: 250;
+    font-size: 15px;
+}
+
+.product span {
+    font-size: 15px;
+    color: #acacac;
+}
+
+.product-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.product-title h2 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.product-title p {
+    color: #acacac;
+    font-size: 20px;
+}
+
+/* --------------------- Cart -------------------- */
+.cart h1 {
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.form-payment {
+    max-width: 960px;
+    margin: auto;
+}
+
+.form-payment p {
+    color: #acacac;
+    font-size: 16px;
+}
+
+/* --------------------- About Us -------------------- */
+.about {
+    margin-top: 20px;
+}
+
+.about h2 span {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+.about h2 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.about h3 {
+    font-weight: 150;
+    font-size: 25px;
+}
+
+.about h3 span {
+    text-transform: uppercase;
+    font-weight: 350;
+    font-size: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* ---------------------Contact Us-------------------- */
+.contact {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.contact-form-right h2 {
+    font-weight: 150;
+    font-size: 35px;
+}
+
+.contact-form-right p {
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.contact-form-right input {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.contact-form-right textarea {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.contact-info-left .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info-left {
+    margin-top: 35px;
+    margin-left: 20px;
+    padding: 5%;
+    background: url("/gambar/milk_bottle.jpg") no-repeat center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.contact-info-left::after {
+    background: rgba(255, 255, 255, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.contact-info-left h2 {
+    font-weight: 150;
+    font-size: 26px;
+}
+
+.contact-info-left p {
+    margin-bottom: 15px;
+}
+
+.contact-info-left ul li {
+    margin-bottom: 12px;
+}
+
+.contact-info-left ul li p {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    left: -20px;
+}
+
+.contact-info-left ul li p i {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+.contact-info-left a {
+    color: black;
+}
+
+.contact-info-left ul li p a:hover {
+    color: #a2d5f2;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+/* ---------------------Footer-------------------- */
+.footer {
+    margin-top: 10px;
+    background-color: #f9f6f2;
+    font-weight: 200;
+}
+
+.footer h4 {
+    font-weight: 150;
+}
+
+.footer .fab {
+    color: black;
+}
+
+/* ---------------------Copywright-------------------- */
+.copyright {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #f6f4e6;
+    text-align: center;
+}
+
+.copyright p,
+.copyright a {
+    color: black;
+    text-decoration: none;
+}
+
+/* --------------------------------DESKTOP VERSION------------------------------ */
+@media (min-width: 992px) {
+    .navbar-brand {
+        color: #a2d5f2 !important;
+        font-size: 40px;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #a2d5f2;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Button */
+    .btn-custom {
+        background-color: #a2d5f2;
+    }
+    .tombol {
+        text-transform: uppercase;
+        border-radius: 40px;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        margin-top: -86px;
+        height: 650px;
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+        margin-top: 200px;
+    }
+
+    /* Picture Under Navbar */
+    .picture {
+        margin-top: -86px;
+        height: 340px;
+    }
+    .picture .display-4 {
+        color: #ffffff;
+        margin-top: 60px;
+        font-weight: 160;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        float: right;
+        font-size: 62px;
+    }
+
+    /* Home */
+    .home-product {
+        text-align: left;
+    }
+
+    /* Product */
+    .product-title h2 {
+        font-weight: 200;
+        font-size: 40px;
+    }
+    .small-container {
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product .tombol {
+        margin-left: 40px;
+    }
+    .col-3 img {
+        width: 100%;
+    }
+    .product p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .product .desc {
+        font-weight: 250;
+        font-size: 16px;
+    }
+    .product span {
+        font-size: 16px;
+        color: #acacac;
+    }
+
+    /* About Us */
+    .about h2 {
+        font-weight: 150;
+        font-size: 40px;
+    }
+    .about h2 span {
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .about h3 {
+        font-weight: 150;
+        font-size: 30px;
+    }
+    .about h3 span {
+        text-transform: uppercase;
+        font-weight: 350;
+        font-size: 30px;
+    }
+
+    /* Contact Us */
+    .contact-form-right h2 {
+        font-weight: 150;
+        font-size: 40px;
+    }
+    .contact-form-right p {
+        font-size: 18px;
+        font-weight: 150;
+    }
+    .contact-info-left h2 {
+        font-weight: 150;
+        font-size: 30px;
+    }
+
+    /* --------------------- Admin Section -------------------- */
+    .admin-create {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .admin-create h3 {
+        font-weight: 200;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .admin-create p {
+        font-size: 18px;
+        font-weight: 150;
+    }
+
+    .admin-create label {
+        font-size: 16px;
+        font-weight: 250;
+    }
+
+    .admin-create input {
+        font-size: 16px;
+        font-weight: 250;
+    }
+
+    .admin-create textarea {
+        font-size: 16px;
+        font-weight: 250;
+    }
+
+    .input-group-prepend span {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
