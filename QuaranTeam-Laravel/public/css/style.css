@@ -1,0 +1,169 @@
+/* -----------------------------------------DETAIL ORDER---------------------------------------- */
+.main-top {
+  background-image: linear-gradient(to right, #00b8f0 , #009d56, #ffcc29);
+  height: 95px;
+}
+
+.detail-top ul li{
+  border-right: 3px solid #ffffff;
+  padding: 0px 20px 10px 5px;
+  line-height: 14px;
+}
+
+.detail-top ul li:last-child{
+  border: none;
+}
+
+.detail-top p {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.detail-top span {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.input-group-uang {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.total {
+  border-left: 3px solid #fdb827;
+  padding: 0px 0px 0px 20px;
+}
+
+.total p {
+  font-size: 25px;
+  font-weight: 650;
+  text-transform: uppercase;
+  color: #fdb827;
+}
+
+.total span {
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 350px;
+}
+
+/* -----------------------------------------DISPLAY ORDER---------------------------------------- */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.kepala {
+  background-image: linear-gradient(to right, #00b8f0 , #009d56, #ffcc29);
+}
+
+.judul {
+  color: white;
+  font-weight: 500;
+}
+<<<<<<< HEAD
+=======
+
+/* -----------------------------------------layout---------------------------------------- */
+* {
+    /* max-width: 1080px;
+    max-height: 1920px; */
+    box-sizing: border-box;
+}
+
+.layout {
+    background-color: #F1F6F9;
+    /* height: 100%; */
+    width: 1080px;
+    height: 1920px;
+
+}
+
+.layer_1 {
+    margin: 0%;
+    background-color: #E7E7E7;
+    border-radius: 0px 60px 0px 0px;
+    width: 1080px;
+    height: 1920px;
+}
+
+.orderLayer {
+    max-height: 100%;
+    height: auto;
+    margin-top: 10%;
+    background-color: #14274E;
+    border-radius: 0px 60px 0px 0px;
+}
+
+.section-divider {
+    height: 0;
+    border-top: 3px solid;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.section-divider>h2 {
+    background: #E7E7E7;
+    display: inline-block;
+    position: relative;
+    padding: 0 50px;
+    top: -22px;
+
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+}
+
+.section-divider2 {
+    height: 0;
+    border-top: 3px solid white;
+    margin-bottom: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.button1 {
+    background-color: #F0EA51;
+    border-radius: 10px;
+}
+
+.button2 {
+    background-color: #BCBCBD;
+    border-radius: 10px;
+}
+
+main {
+    color: white;
+}
+
+.bottomright {
+    align-items: center;
+}
+
+/* -----------------------------------------Input Product---------------------------------------- */
+>>>>>>> 8768ef6e3895024a6dd87dc53618ad567963cbac

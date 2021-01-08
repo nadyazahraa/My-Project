@@ -14,7 +14,7 @@
     <div class="row">
       @foreach ( $milks as $milk )
         <div class="col-3">
-          <img src="{{ url('storage/foto/'.$milk->gambar) }}" alt="Milky Way Products" class="rounded">
+          <img src="{{ url('/foto/'.$milk->gambar) }}" alt="Milky Way Products" class="rounded">
           <p>{{ $milk->judul }}</p>
           <p class="desc">{{ $milk->description }}</p>
           <span>IDR {{ $milk->harga }}/bottle</span>

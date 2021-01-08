@@ -1,0 +1,29 @@
+Struktur Folder Laravel
+
+1. app
+	c. Http
+		1). Controller -> Folder Controller
+			(kodingan buat controller customer, admin sama cashier)
+	d. Models -> Folder Models
+		(kodingan buat setiap table)
+..
+6. public
+	a. css
+	b. img
+		(semua image di simpen di sini)
+7. resources
+	a. views -> Folder Front-endnya
+		1). layouts -> buat bikin layouts semacam template
+			(ada layout customer, cashier, sama admin)
+		2). customer
+			(kodingan utama buat yang customer)
+		3). livewire -> buat order & cart customer biar realtime
+			(kodingan tambahan buat yang customer)
+		4). admin
+			(kodingan buat yang admin)
+		5). cashier
+			(kodingan buat yang cashier)
+8. routes
+	a. routes -> Folder buat routingnya
+		..
+		4). web.php -> semua routing di buat di sini

@@ -23,7 +23,7 @@
                 <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
                 <td class="text-center">
-                    <img src="{{ url('storage/foto/'.$milk->gambar) }}" class="rounded" style="width: 150px"/>
+                    <img src="{{ url('/foto/'.$milk->gambar) }}" class="rounded" style="width: 150px"/>
                 </td>
                 <td>{{ $milk->judul }}</td>
                 <td>{{ $milk->harga }}</td>
