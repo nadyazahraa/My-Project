@@ -26,21 +26,22 @@ class AdminController extends Controller
     $this->validate($request,[
           'username' => 'required',
           'password' => 'required',
-          'name' => 'required'
+          'name'     => 'required'
     ]);
 
           if ($request->isAdmin == 1) {
             User::create([
             'username' => $request->username,
             'password' => $request->password,
-            'name' => $request->name,
-            'isAdmin' => $request->isAdmin
+            'name'     => $request->name,
+            'isAdmin'  => $request->isAdmin
             ]);
           } else {
             User::create([
             'username' => $request->username,
             'password' => $request->password,
-            'name' => $request->name
+            'name'     => $request->name
+            'isAdmin'  => 0
             ]);
           }
 
@@ -59,16 +60,26 @@ class AdminController extends Controller
       $this->validate($request,[
           'username' => 'required',
           'password' => 'required',
-          'nama' => 'required'
+          'nama'     => 'required'
 
       ]);
 
-      $update = User::find($id);
-      $update->username = $request->username;
-      $update->password = $request->password;
-      $update->name = $request->name;
-      $update->isAdmin = $request->isAdmin;
-      $update->save();
+      if ($request->isAdmin == 1) {
+        $update = User::find($id);
+        $update->username = $request->username;
+        $update->password = $request->password;
+        $update->name     = $request->name;
+        $update->isAdmin  = $request->isAdmin;
+        $update->save();
+      } else {
+        $update = User::find($id);
+        $update->username = $request->username;
+        $update->password = $request->password;
+        $update->name     = $request->name;
+        $update->isAdmin  = 0;
+        $update->save();
+      }
+      
       return redirect('admin/edit');
   }
 
