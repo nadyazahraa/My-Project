@@ -52,7 +52,7 @@
 
 
    <!-- container start here -->
-   <div class="container">
+   <div class="container"> 
 
       <!-- info panel -->
       <div class="row justify-content-center">

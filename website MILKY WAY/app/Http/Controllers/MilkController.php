@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Milk;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use File;
 
 class MilkController extends Controller
 {
@@ -32,10 +33,11 @@ class MilkController extends Controller
 
         //upload image
         $image = $request->file('gambar');
-        $image->storeAs('public/foto', $image->hashName()); 
+        $imageName = $image->hashName();
+        $request->gambar->move(public_path('img'), $imageName);
 
         $milks = Milk::create([
-            'gambar'      => $image->hashName(),
+            'gambar'      => $imageName,
             'judul'       => $request->judul,
             'harga'       => $request->harga,
             'description' => $request->description
@@ -74,14 +76,15 @@ class MilkController extends Controller
         } else {
 
             //hapus old image
-            Storage::disk('local')->delete('public/foto/'.$milks->gambar);
+            File::delete('img/'.$milks->gambar);
 
             //upload new image
             $image = $request->file('gambar');
-            $image->storeAs('public/foto', $image->hashName());
+            $imageName = $image->hashName();
+            $request->gambar->move(public_path('img'), $imageName);
 
             $milks->update([
-                'gambar'      => $image->hashName(),
+                'gambar'      => $imageName,
                 'judul'       => $request->judul,
                 'harga'       => $request->harga,
                 'description' => $request->description
@@ -95,7 +98,7 @@ class MilkController extends Controller
     public function destroy($id)
     {
         $milks = Milk::findOrFail($id);
-        Storage::disk('local')->delete('public/foto/'.$milks->gambar);
+        File::delete('img/'.$milks->gambar);
         $milks->delete();
 
         return redirect('milk');
